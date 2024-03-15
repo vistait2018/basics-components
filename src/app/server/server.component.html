@@ -1,1 +1,7 @@
 <p>The Server Component</p>
+<p>The Server ID :{{ serverId }} and serverName is {{  serverName }}</p>
+<p class="pill" [innerText]="'The Server Status :' + serverName " ></p>
+<button [disabled]="serverStatus === false">{{ serverStatus}}</button>
+<!-- <input class="" type="text" (input)="showTextInput($event)" 
+    value="" placeholder="Enter text"/> -->
+    <input [(ngModel)]="serverName"  required />
